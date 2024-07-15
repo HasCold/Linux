@@ -1,0 +1,9 @@
+First enable the window-subSystem for linux from windows features.
+
+Then install any linux distro from powershell by the command :- 
+. wsl --install -d ubuntu    
+
+
+You can also run the linux ubuntu via powershell  
+
+Powershell :- wsl -d ubuntu -u hasan

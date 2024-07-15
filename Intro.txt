@@ -85,3 +85,8 @@ Utilities, Applications, Terminal and other Desktop icons
 . Sleeping
 . Kill
 . Zombie
+
+
+
+--------------------- Terminal ------------------------
+Terminal is the point where we can control the kernel through shell commands.

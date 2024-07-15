@@ -1,0 +1,29 @@
+wsl -l -v   -->> To show the information of ubuntu distro in powershell
+
+wsl -d ubuntu -u hasan   -->> Can run the linux ubuntu distro in powershell 
+
+exit  --->>  Command to exit the linux terminal in powershell
+
+wsl -l -o   --->> Check all the linux distribution list
+
+wsl --shutdown   --->> To shutdown all the linux terminal 
+
+wsl -t ubuntu    --->> Terminate all the operations of ubuntu
+
+wsl -d ubuntu -u root   --->> To login with the root 
+
+wsl -d ubuntu hostname -I   --->> I.P. address of your ubuntu distro 
+172.26.118.89
+
+ipconfig   --->> Show network configuration
+
+hostname
+
+
+
+---------- Create new root password --------------
+
+. wsl -d ubuntu -u root
+. passwd root
+--->> New password ______
+--->> Retype new password _______

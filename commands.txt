@@ -7,4 +7,41 @@ df -h   -->> How much Harddisk is used.
 Linux file system follows the Hierarchy level
 
 cd /    --->> Linux file system i.e. root folder
+cd      --->> Change Directory
+
 ls   --->> List all files
+
+exit  --->>  Command to exit the linux terminal 
+
+date  --->> Mon Jul 15 23:26:18 PKT 2024
+
+ls -l --->> list all the files and folders along with the information
+
+pwd   --->> Present Working Directory
+
+touch newFile.txt   --->> Create a new file
+
+------------------ Delete Commands ------------------------
+
+. rm filename
+. rm file1 file2 file3
+. rmdir directoryname
+. rm -r directoryname  -->> use the rm command with the -r (recursive) option:
+
+------------------------------------------------------------
+
+
+cat demo.txt   --->> Show the file content
+
+echo "Hello, Programs"  --->> To print something on the terminal
+
+echo "Hello, Programmers" | sudo tee demo.txt    --->>   Pipes (|) the output to the next command.
+                                                         sudo tee demo.txt: Runs tee with sudo to write to demo.txt.
+
+
+head myFile.txt    --->> Print top 10 files or line of code 
+
+tail myFile.txt    --->> Print last 10 files or line of code
+tail -f myFile.txt    --->> Print last 10 files or line of code along with the incoming data 
+
+less, more   --->>  Show more paginated or less paginated content of files.
