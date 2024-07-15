@@ -1,0 +1,87 @@
+Internet works :-
+
+. Internet transmit by the optical fibers which is planted under the sea ocean.
+. Then the data transmit from the data center via optical fibers cables and the large organization owns this like Jio, Airtel etc.
+. And then internet reaches at your location through ISP(Internet Service Provider) because you have IP address and device connected to the router etc.   
+
+
+SERVER :-
+
+. Web Server =  To serve the static content like HTML pages, images and videos
+. Email Server = To serve the email info.
+. File Server = To serve the file info.
+. DB Server = To perform some CRUD operation.
+. App Server = To facilitate applications (youtube.com, facebook.com) and server dynamic data.
+
+Application Server = To serve dynamic data. Like Node.js Server, Golang Server
+Web Server = To serve static data.  Like  Nginx, Apache Kafka 
+
+
+Standalone Apps = It doesn't need anything like servers, databases, network connection etc.
+Web Apps = It need servers, databases, network connection etc to operate the applications.
+
+
+----------------------------- OS ----------------------------------
+Linux was made by Linus Torvalds in 1991. 
+
+90% people uses windows OS.
+90% application runs on the Linux OS.
+
+
+Unix and Linux
+
+. Unix is a commercialized OS in which you had to buy. MacOS is a prime example in which you have to pay if you use it.
+. Unix is a parent of Linux OS. Linux is open source version and it is free. 
+
+
+Install Linux :- 
+. WSL (windows sub-system linux)
+. Virtual Box (VMware)
+. AWS, Azure, GCP cloud virtual machine
+. Vagrant
+
+
+Windows and Linux
+
+. Windows is a commercial licensed software
+. Linux is a General Public Licensed (GPL) software
+. Linux OS (flavour Ubuntu, centOS, Debian, Kali Linux)
+
+
+How can we access remote location server.
+1. RDP (Remote Desktop Protocol)
+2. SSH (secure shell)
+3. AnyDesk
+
+
+--------------------- Kernal, BootLoader ------------------------------------ 
+
+Linux :- 
+
+. Linux is a Operating system and Kernal is the heart of linux. Kernal has mainly programs, logic codes and files in order to run the whole Operating system. Kernal name Linux Kernal
+. Kernal is a core part of the Operating system. It is written in the C programming language mainly and how can we interact and communicate this kernal so in this case we have shell commands (Shell).
+. Shell is a gateway or interface between user and kernal. So if someone has to master linux in this case they must master the shell commands in order to communicate with the kernal.
+
+
+BootLoader :-
+
+. BootLoader is a process in Kernal which runs the files of Operating system needed when switch ON the machine.
+. GRUB is a bootloader and is the program on linux systems that loads and manages the boot process. (GRand Unified BootLoader)
+
+
+--------------------- Linux Architecture ------------------------------------ 
+Utilities, Applications, Terminal and other Desktop icons
+                       |
+                     Shell 
+                       |
+                     Kernal
+                       |
+                    Hardware
+
+
+--------------------- States of the processes ------------------------------------ 
+. Stop
+. Running
+. Sleeping
+. Kill
+. Zombie

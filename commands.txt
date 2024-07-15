@@ -1,0 +1,10 @@
+--------------------------------- Commands ---------------------------------
+
+top  -->> information about the Hardware how much CPU is utilize.
+
+df -h   -->> How much Harddisk is used.
+
+Linux file system follows the Hierarchy level
+
+cd /    --->> Linux file system i.e. root folder
+ls   --->> List all files
