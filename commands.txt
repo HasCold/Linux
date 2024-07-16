@@ -45,3 +45,94 @@ tail myFile.txt    --->> Print last 10 files or line of code
 tail -f myFile.txt    --->> Print last 10 files or line of code along with the incoming data 
 
 less, more   --->>  Show more paginated or less paginated content of files.
+
+cp <source> <where-to-paste>   --->> cp newFile.txt devops/   --->> Copy newFile.txt and paste it into devops/ folder
+cp -r devops/ linux/           --->> If copy the whole dir into another dir then use -r flag which is used for recursive. 
+
+mv <source> <destination>       ---->> move command the file should moved from source to destination
+mv myFile.txt ../cloud/         ---->> move myFile.txt from devops dir to the cloud dir
+
+// Rename
+mv old_filename new_filename    ---->>  mv (short for "move") rename a file
+mv old_directory new_directory  ---->> rename a Directory
+
+wc demo.txt  --->> word count in the file  --->> Hello, World!  --->> 1(lines)  2(words) 14(bytes) in demo.txt
+
+
+------------------------------- Links -----------------------------
+Links are short cuts in linux 
+
+- Hard Link :- If your main file is deleted so your short-cut will remain same. Means hardlink file will remain undeleted or same when your main file is deleted.
+
+- Soft Link :- But if your main file is deleted so your short-cut will also deleted. Means softlink file is delete when your main file is deleted. 
+
+. ln -s /linux/cloud/devops-file.txt softlink-file  -->> ln : link ; -s : softlink ; ./path/ given ; softlink file name
+. ls -ltr  -->> This command show you more information + softlink file 
+. ln /linux/cloud/devops-file.txt hardlink-file    -->> hardlink command
+
+-----------------------------------------------------------------------
+
+cut       --->>       cut -b 1-4 myFile.txt  --->> cut the first four bytes of the file -->> This      
+
+tee        --->>        echo "Hello, testing" | sudo tee "testing.txt"  -->> Pipe (|) the echo command with the next command perform    write operation in testing.txt
+
+sort hello.txt  -->>  Sort the content in the files
+
+diff myFile.txt testing.txt  --->>  Difference shows between two files
+
+< This is my file
+---
+> Hello, testing
+
+
+
+------------------------------- Vim Editor -----------------------------
+
+vim <file-name> --->> vim fun.txt   ---->> Open the Editor
+
+. i  =  Insert Mode
+. esc  =  Escape to get out from the insert mode
+. :wq  =  : write quit --->> Saving and Quitting file with :wq
+. :qa  = Exiting Without Saving Changes 
+. :q! = This forces Vim to quit without saving any changes.
+
+-----------------------------------------------------------------------
+
+
+
+------------------------------- Login to a Remote Server (SSH) -----------------------------
+- Login through SSH (Secure Shell).
+- SSH access to a port number : 22.
+
+SSH has a public and private keys
+- Generally public keys are made by the private keys.
+- Private Key can encrypt or decrypt the Public Key.
+
+- Local -->> To the -->> Server  ==  Private Key
+- Server = Public keys
+
+
+AWS :- When we generate the keys into aws so the ssh-key-gen process command will generate the two keys Public key and Private key. 
+- After creating the keys from the ssh-key-gen process command. 
+- The public key will send to the instance (remote server) and private key will be save to your machine.
+- SSH client to login your computer to the AWS instance.
+
+. ssh   --->>  Check ssh is in your machine or not    
+----------------------------------------------------------------------------------------------
+
+df -h   --->> disk file size
+
+ls -a   -->> Show you a hidden folder
+
+ps   -->>  Tells you the processes
+
+top  -->> Tell you all the processes
+
+kill -9 <process-id>   --->> Kill any process (PID)
+
+free   --->> Tells a disk space  =   total(RAM)   used        free      shared    buff/cache      available
+                       Mem:           3.8Gi       488Mi       2.8Gi       3.0Mi       486Mi         3.1Gi
+                       Swap:          1.0Gi          0B       1.0Gi
+
+
+vmstat   -->> virtual memory statistics
