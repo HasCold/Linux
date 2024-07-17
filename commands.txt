@@ -120,6 +120,8 @@ AWS :- When we generate the keys into aws so the ssh-key-gen process command wil
 . ssh   --->>  Check ssh is in your machine or not    
 ----------------------------------------------------------------------------------------------
 
+
+
 df -h   --->> disk file size
 
 ls -a   -->> Show you a hidden folder
@@ -136,3 +138,75 @@ free   --->> Tells a disk space  =   total(RAM)   used        free      shared  
 
 
 vmstat   -->> virtual memory statistics
+
+
+
+----------------------------- User Management & File Permissions -----------------------------------
+
+// --------------------------- System-Level Commands (Every engineer should know about the system information) :- 
+
+. uname   --->> Tells you the platform name  -->> Linux
+
+. uptime   --->> Tell the time how long the systems is running 
+
+. who  --->> Which and when the user has logged in the system.
+
+. whoami  -->>  current system logged in user name
+
+. which  -->>  Tells you the location of application --->>  which bash : /usr/bin/bash
+
+. id    --->>  show you the id of logged in user 
+uid=1000(hasan) gid=1000(hasan) groups=1000(hasan),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev)
+
+. sudo  --->> Super User DO  --->> Root level user
+
+. shutdown   --->> Shutdown the systems
+
+. sudo reboot   -->> System Restart 
+
+. apt  --->> Application Package Manager System for Ubuntu   --->> sudo apt install docker.io
+
+. sudo apt-get update   --->> Update the system
+
+. sudo apt remove docker.io  --->> Delete docker application
+
+. Ctrl + r   --->> Reverse Search (Previous commands you have entered)
+
+
+// ----------------------------------- User And Group Management Commands
+
+. sudo useradd -m jetha   --->>  /home/jetha ; -m = make directory ; Add another user into the directory 
+
+. sudo passwd jetha  --->> hello   ------>> Make a password of that particular user.
+
+. sudo userdel jethal   --->> Delete the user/jethal
+
+. su jetha   -->> switch user  from hasan to jetha
+
+. if switch back to your primary user from jetha to hasan  -->> exit command
+
+. cat /etc/passwd   --->> Through the list of users who was added 
+
+. sudo groupadd devops  --->> Make a groups
+
+. cat /etc/group   --->> Through the list of all the groups in the system
+
+// Make sure before adding user to groups , first make the user by this command sudo useradd -m <name> -->> /home/<name>
+// sudo gpasswd -a hasan devops  --->> gpasswd : group-password
+
+. sudo gpasswd -a -m   -->> sudo gpasswd -a jethalal devops  --->> -a = Adding user jethalal to devops group
+. sudo gpasswd -M iyer, saad, huzi devops   --->>> Adding multiple users to a group
+
+. sudo groupdel devops   --->>> Delete the group
+
+** How to use the sudo groupadd <group-name>  -->> You can make one group like devops, tester, backend and frontend and then assign that particular role of group to the specific employee. ** 
+
+
+
+// ------------------------------------------ File Permission Commands
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
