@@ -168,6 +168,8 @@ uid=1000(hasan) gid=1000(hasan) groups=1000(hasan),4(adm),20(dialout),24(cdrom),
 
 . sudo apt-get update   --->> Update the system
 
+. sudo apt update   --->>  package list is up-to-date.
+
 . sudo apt remove docker.io  --->> Delete docker application
 
 . Ctrl + r   --->> Reverse Search (Previous commands you have entered)
@@ -256,3 +258,26 @@ Command :-
 
 
 ----------------------------------------------------------------------------------------------------
+
+
+----------------------------- Networking Commands -----------------------------------
+
+. ping trainwithshubham.com   -->> Ping command just to check the application server that is running or not means the server gives a data to the client.
+
+. sudo apt install net-tools
+
+. netstat   --->>  gives you a network statistics
+
+. ifconfig  --->> Network Interface Configuration
+
+ifconfig  = (eth0) ethernet  -->> NIC (Network Interface Card) is connected with our WiFi 
+
+
+1. client request 
+2. The request first goes to the ISP.
+3. Then request goes to DNS server which converts human readable name into IP addresses   
+4. Once your browser knows the IP address, it establishes a TCP (Transmission Control Protocol) connection to Google's servers. This connection ensures reliable communication between your browser and Google.
+
+. traceroute youtube.com  -->>  This will tell you all location path of the client request to the end origin server.   
+
+-------------------------------------------------------------------------------------
