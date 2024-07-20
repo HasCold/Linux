@@ -132,7 +132,7 @@ top  -->> Tell you all the processes
 
 kill -9 <process-id>   --->> Kill any process (PID)
 
-free   --->> Tells a disk space  =   total(RAM)   used        free      shared    buff/cache      available
+free -h  --->> Tells a disk space  =   total(RAM)   used        free      shared    buff/cache      available
                        Mem:           3.8Gi       488Mi       2.8Gi       3.0Mi       486Mi         3.1Gi
                        Swap:          1.0Gi          0B       1.0Gi
 
