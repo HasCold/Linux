@@ -318,3 +318,31 @@ ifconfig  = (eth0) ethernet  -->> NIC (Network Interface Card) is connected with
 
 
 -------------------------------------------------------------------------------------
+
+
+
+------------------------------- AWK , SED & GREP ---------------------------------------
+
+. awk  -->>  Extract data from log file suppose you have 2000 lines of log and can be extract from the line number 20. We can do the little bit programming from awk command. 
+
+. sudo vim app.log
+
+. head -n 5 app.log   --->> Show the 5 lines from app.log file
+
+. awk '{print}' app.log  --->> Print the log file
+
+. awk '{print $1, $2}' app.log   -->> Print the 1st and 2nd column
+
+. awk '{print $1, $2, $4}' app.log  -->> Print the 1st, 2nd and 4th  column
+
+. awk '/TRACE/ {print $1, $2, $3, $5}' app.log   -->> Print the 1st, 2nd , 3rd and 5th  column of TRACE filtered
+
+. awk '/INFO/ {print $1, $2, $3, $5}' app.log | sudo tee only_info.log   --->> Output pipe to the other file 
+
+. awk '/creating/ {print $1, $2, $4}' only_info.log
+
+. awk '/INFO/ {count++} END {print count}' app.log  --->> Print the total count
+
+.  awk '/9.67.116.98/ {count++} END {print "The count of IP is", count}' app.log
+
+----------------------------------------------------------------------------------------
